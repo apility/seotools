@@ -153,6 +153,14 @@ class TwitterCards implements TwitterCardsContract
 
     /**
      * {@inheritdoc}
+     */
+    public function hasImage(): bool
+    {
+        return count($this->images) > 0;
+    }
+
+    /**
+     * {@inheritdoc}
      *
      * @deprecated use setImage($image) instead
      */

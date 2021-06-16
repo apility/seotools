@@ -142,6 +142,11 @@ interface JsonLdMulti
     public function addImage($image);
 
     /**
+     * @return boolean
+     */
+    public function hasImage(): bool;
+
+    /**
      * @param string|array $images
      *
      * @return static

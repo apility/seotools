@@ -179,6 +179,14 @@ class JsonLdMulti implements JsonLdMultiContract
     /**
      * {@inheritdoc}
      */
+    public function hasImage(): bool
+    {
+        return count($this->images) > 0;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function setImage($image)
     {
         $this->list[$this->index]->setImage($image);

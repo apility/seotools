@@ -734,6 +734,14 @@ class OpenGraph implements OpenGraphContract
     /**
      * {@inheritdoc}
      */
+    public function hasImage(): bool
+    {
+        return count($this->images) > 0;
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function addImages(array $urls)
     {
         array_push($this->images, $urls);

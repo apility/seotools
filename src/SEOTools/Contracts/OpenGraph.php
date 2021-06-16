@@ -104,6 +104,11 @@ interface OpenGraph
     public function addImage($url, $attributes = []);
 
     /**
+     * @return boolean
+     */
+    public function hasImage(): bool;
+
+    /**
      * Add images to properties.
      *
      * @param array $urls
