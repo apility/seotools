@@ -782,6 +782,16 @@ class OpenGraph implements OpenGraphContract
 
         return $this;
     }
+    
+   /**
+     * {@inheritdoc}
+     */
+    public function setImage($image)
+    {
+        $this->images = [$image];
+
+        return $this;
+    }
 
     /**
      * {@inheritdoc}
