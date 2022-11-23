@@ -55,6 +55,10 @@ class SEOToolsServiceProvider extends ServiceProvider implements DeferrableProvi
         }
 
         $this->mergeConfigFrom($configFile, 'seotools');
+        
+        $this->publishes([
+            __DIR__ . '/../../resources/config/seotools.php' => $this->app->configPath('seotools.php'),
+        ], 'config');
     }
 
     /**
